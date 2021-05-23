@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
 
     const address = location
     // const url  = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + address + '.json?access_token=pk.eyJ1IjoiZ3J2c2luZ2g2NCIsImEiOiJja296ZjlnYW0wdTU5MnFxcXA4eHZzd3VhIn0.2OHU09qCHzUtwF40UFgzFQ'
-    const url = 'http://localhost:3000/weather?address=' + location
+    const url = '/weather?address=' + location
     fetch(url).then((response) => {
         response.json().then((data) => {
             if (data.error){
